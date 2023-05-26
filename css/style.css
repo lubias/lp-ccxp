@@ -1,0 +1,89 @@
+nav{
+    background-color: #FFD900;
+}
+
+*{
+    font-family: Verdana;
+    color: #CCCCCC;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 3.3vw;
+}
+
+h4{
+    font-size: 1.2vw;
+}
+
+p{
+    font-size: 1.2vw;
+}
+
+.text-bold{
+    font-weight: 700;
+}
+
+.text-yellow{
+    color: #FFD900;
+}
+
+.text-pink{
+    color: #E33881;
+}
+
+.background-purple{
+    background-color: #514988;
+}
+
+.timer{
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: start;
+    margin-top: 30px;
+}
+
+.timer h1, .timer span{
+    color: #514988;
+}
+
+video{
+    width: 100%;
+}
+
+.div-video{
+    margin-right: 3rem;
+}
+
+.px-6r{
+    padding-left: 6rem; 
+    padding-right: 6rem; 
+}
+
+.py-30{
+    padding-top: 30px; 
+    padding-bottom: 30px;
+}
+
+.h4_div{
+    width: 60%;
+}
+
+.btn-purple{
+    background-color: #514988;
+    height: 110px;
+    border-radius: 20px !important;
+    color: #FFFFFF;
+    font-size: 2.2rem;
+}
+
+.btn-purple:hover{
+    color: #FFD900;
+    cursor: pointer;
+    background-color: #514988;
+}
