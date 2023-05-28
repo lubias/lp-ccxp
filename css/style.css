@@ -87,3 +87,40 @@ video{
     cursor: pointer;
     background-color: #514988;
 }
+
+.card-highlight{
+    box-shadow: 10px 10px 10px 10px gray;
+}
+
+.card-selected{
+    border: 5px solid green;
+}
+
+.modal-body{
+    color: #000000 !important;
+}
+
+input{
+    background-color: #514988;
+    border-radius: 10px;
+    color: #FFFFFF;
+    border: 0pt;
+    margin: 30px;
+    width: 400px;
+    height: 40px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+#form-div{
+    background-color: #FFD900;
+    text-align: center;
+}
+
+input::placeholder{
+    color: #cccccc;
+}
+
+#btn-submit:hover{
+    color: #FFD900;
+}

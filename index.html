@@ -10,6 +10,11 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -71,33 +76,92 @@
           <div class="container">
             <div class="row">
               <div class="col">
-                <img id="quinta" src="./img/ingresso_1.svg" alt="ingresso_1" />
+                <img
+                  id="quinta"
+                  src="./img/ingresso_1.svg"
+                  alt="ingresso_1"
+                  onclick="selectCard('#quinta')"
+                  onmouseover="highlightCard('#quinta')"
+                  onmouseout="highlightCard('#quinta')"
+                />
               </div>
               <div class="col">
-                <img id="sexta" src="./img/ingresso_2.svg" alt="ingresso_2" />
+                <img
+                  id="sexta"
+                  src="./img/ingresso_2.svg"
+                  alt="ingresso_2"
+                  onclick="selectCard('#sexta')"
+                  onmouseover="highlightCard('#sexta')"
+                  onmouseout="highlightCard('#sexta')"
+                />
               </div>
               <div class="col">
-                <img id="sabado" src="./img/ingresso_3.svg" alt="ingresso_3" />
+                <img
+                  id="sabado"
+                  src="./img/ingresso_3.svg"
+                  alt="ingresso_3"
+                  onclick="selectCard('#sabado')"
+                  onmouseover="highlightCard('#sabado')"
+                  onmouseout="highlightCard('#sabado')"
+                />
               </div>
               <div class="col">
-                <img id="domingo" src="./img/ingresso_4.svg" alt="ingresso_4" />
+                <img
+                  id="domingo"
+                  src="./img/ingresso_4.svg"
+                  alt="ingresso_4"
+                  onclick="selectCard('#domingo')"
+                  onmouseover="highlightCard('#domingo')"
+                  onmouseout="highlightCard('#domingo')"
+                />
               </div>
             </div>
           </div>
         </div>
         <div class="col-5">
           <div class="d-grid gap-2 col-6 mx-auto">
-            <button class="btn btn-purple text-bold" type="button">GARANTA O SEU!</button>
+            <button
+              class="btn btn-purple text-bold"
+              type="button"
+              onclick="showSelectedCards()"
+            >
+              GARANTA O SEU!
+            </button>
           </div>
         </div>
       </div>
     </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ingressos Selecionados</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body"></div>
+        </div>
+      </div>
+    </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
+    <div id="form-div">
+      <form action="https://www.google.com">
+        <input type="email" name="email" id="email" placeholder="Seu e-mail" required>
+        <input type="submit" id="btn-submit">
+      </form>
+    </div>
+
     <script src="./js/index.js"></script>
   </body>
 </html>
